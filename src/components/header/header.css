@@ -269,8 +269,8 @@ header {
         font-size: 9px;
     }
 
-    .header{
-        padding-bottom: 0px;
+    .containor{
+        padding-top: 20px;
     }
 
     .dropdown img {
