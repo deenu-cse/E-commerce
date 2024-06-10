@@ -63,13 +63,6 @@
     color: #355454;
 }
 
-.msg {
-    bottom: 120px;
-    position: absolute;
-    width: 230px;
-    left: 7%;
-    height: 40px;
-}
 
 .msg {
     width: 80%; 
