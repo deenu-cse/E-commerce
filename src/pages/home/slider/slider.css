@@ -71,6 +71,7 @@
     transform: translateX(-50%); 
     position: absolute;
     height: 40px;
+    bottom: -120px;
 }
 
 .msg input {
@@ -108,12 +109,17 @@
 }
 @media screen and (max-width:560px) {
     .mainslide .item .info h2 {
-        font-size: 30px;
+        font-size: 22px;
     }
     .mainslide .item .info p {
-        font-size: 16px;
+        font-size: 12px;
     }
     .msg{
-        left:30%;
+        max-width: 170px;
+        height: 30px;
+    }
+    .msg button{
+        width: 70px;
+        height: 30px;
     }
 }
