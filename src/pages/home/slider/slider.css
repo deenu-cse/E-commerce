@@ -9,7 +9,7 @@
 }
 
 .homeslider {
-    padding: 15px;
+    padding: 10px;
     padding-top: 10px;
 }
 
@@ -71,7 +71,7 @@
     transform: translateX(-50%); 
     position: absolute;
     height: 40px;
-    bottom: 120px;
+    bottom: 400px;
 }
 
 .msg input {
@@ -96,7 +96,7 @@
     height: 40px;
     width:100px;
     top: 0.6px;
-    right: -80px;
+    right: -75px;
 }
 
 @media screen and (max-width:776px) {
@@ -117,6 +117,7 @@
     .msg{
         max-width: 170px;
         height: 30px;
+        left: 25%;
     }
     .msg button{
         width: 70px;
