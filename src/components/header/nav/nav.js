@@ -6,6 +6,8 @@ import all from '../../../images/icons8-border-all-48.png'
 import { Link } from 'react-router-dom'
 import phone from '../../../images/icons8-phone-50 (1).png'
 import vegi from '../../../images/firstvegi.png'
+import '../../../App.css'
+
 
 export default function Nav() {
     const [pagedropdown, setpagedropdown] = useState(false)

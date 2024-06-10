@@ -12,6 +12,8 @@ import setting from '../../images/icons8-settings-50.png'
 import sign from '../../images/icons8-sign-out-32.png'
 import down from '../../images/icons8-expand-arrow-24 (1).png'
 import Nav from './nav/nav';
+import '../../App.css'
+
 
 export default function Header() {
     const [dropdown, setdropdwon] = useState(false);

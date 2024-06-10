@@ -3,6 +3,7 @@ import '../slider/slider.css'
 import Slider from "react-slick"
 import slid1 from '../../../images/slider-1.png'
 import slid2 from '../../../images/slider-2.png'
+import '../../../App.css'
 
 
 

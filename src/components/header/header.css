@@ -1,4 +1,4 @@
-header{
+header {
     min-width: 100%;
     height: 80px;
     margin: auto;
@@ -6,41 +6,47 @@ header{
     padding-bottom: 20px;
     margin-top: -20px;
 }
-.col img{
+
+.col img {
     width: 120px;
     height: auto;
 }
-.hsearch{
-    width:520px;
+
+.hsearch {
+    width: 520px;
     height: 35px;
-     padding-top: 5px;
-     cursor: pointer;
-     display: flex;
-     gap: 15px;
-     background-color: #488d8d;
-     box-shadow: 0px 3px 6px rgba(0,0,0,20%);
+    padding-top: 5px;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    background-color: #488d8d;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 20%);
 }
-.row{
+
+.row {
     display: flex;
     align-items: center;
     text-align: center;
     gap: 30px;
     justify-content: space-evenly;
 }
-.hsearch .search input{
-    width:300px;
+
+.hsearch .search input {
+    width: 300px;
     height: 30px;
     border: 0;
     outline: none;
     padding-left: 10px;
     font-size: 16px;
     border-radius: 20px;
-    box-shadow: 0px 3px 6px rgba(0,0,0,20%);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 20%);
 }
-.hsearch .search{
+
+.hsearch .search {
     position: relative;
 }
-.dropdown{
+
+.dropdown {
     border: 1px solid black;
     border: 0;
     outline: none;
@@ -48,17 +54,19 @@ header{
     font-weight: 500;
     position: relative;
 }
-.hsearch .search img{
+
+.hsearch .search img {
     position: absolute;
     top: 6px;
-    right: -30px;
+    right: -25px;
     width: 20px;
 }
-.hsearch{
+
+.hsearch {
     border-radius: 4px;
 }
 
-.hsearch .dropdown{
+.hsearch .dropdown {
     background-color: #488d8d;
     margin-top: -5px;
     align-content: center;
@@ -66,29 +74,48 @@ header{
     padding-left: 2px;
     border-radius: 10px;
 }
-.tabs ul li{
+
+.tabs ul li {
     list-style: none;
 }
-.tabs{
+
+.tabs {
     z-index: 100;
 }
-.com img{
+
+.com img {
+    width: 25px;
+    margin-bottom: -5px;
+}
+
+.cart img {
+    margin-bottom: -4px;
     width: 25px;
 }
-.cart img{
-    width: 25px;
+
+.heart img {
+    margin-bottom: -6px;
+
 }
-.tabs ul{
+
+.acc img {
+    margin-bottom: -10px;
+
+}
+
+.tabs ul {
     text-align: center;
     display: flex;
     align-items: center;
     gap: 20px;
     color: #a3ffff;
 }
-.acc{
+
+.acc {
     position: relative;
 }
-.accdrop{
+
+.accdrop {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -100,32 +127,158 @@ header{
     border-radius: 5px;
     background-color: white;
 }
-.accdrop li{
+
+.accdrop li {
     padding: 3px 15px;
     border-radius: 4px;
     cursor: pointer;
     color: black;
     display: flex;
 }
-.accdrop li img{
+
+.accdrop li img {
     width: 23px;
 }
-.track img{
+
+.track img {
     height: 25px;
 }
-.accdrop li:hover{
-    background-color:#507272;
+
+.accdrop li:hover {
+    background-color: #507272;
 }
 
-.acc{
+.acc {
     cursor: pointer;
 }
-.accdrop li:active{
+
+.accdrop li:active {
     background-color: #488d8d;
 }
-.dropdown{
+
+.dropdown {
     color: white;
 }
 
+.dropdown img {
+    width: 28px;
+}
 
+@media screen and (max-width:1025px) {
+    .row {
+        gap: 1px;
+    }
+}
 
+@media screen and (max-width:990px) {
+    .row {
+        gap: 1px;
+    }
+}
+
+@media screen and (max-width:920px) {
+    .hsearch {
+        width: 300px;
+    }
+    .row{
+        gap: 2px;
+    }
+}
+
+@media screen and (max-width:920px) {
+    .hsearch .search input {
+        width: 120px;
+        margin: 0;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .col img {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:745px) {
+    .tabs ul li {
+        font-size: 12px;
+    }
+
+    .tabs ul {
+        gap: 4px;
+    }
+
+    .tabs {
+        margin-left: -30px;
+    }
+
+    .com img {
+        width: 20px;
+    }
+
+    .cart img {
+        width: 20px;
+    }
+    .col img {
+        width: 70px;
+        height: 90px;
+    }
+    .header{
+        padding-bottom: 0px;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .dropdown {
+        font-size: 15px;
+    }
+
+    .dropdown img {
+        width: 20px;
+    }
+}
+@media screen and (max-width:560px) {
+    .hsearch {
+        width: 220px;
+    }
+    .row{
+        gap: 2px;
+    }
+}
+@media screen and (max-width:560px) {
+    .hsearch .search input {
+        width: 90px;
+        margin: 0;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:560px) {
+    .dropdown {
+        font-size: 9px;
+    }
+
+    .dropdown img {
+        display: none;
+    }
+}
+@media screen and (max-width:480px) {
+    .dropdown {
+        font-size: 9px;
+    }
+
+    .dropdown img {
+        display: none;
+    }
+    .hsearch .search input {
+        width: 70px;
+        margin: 0;
+        font-size: 12px;
+    }
+    .hsearch {
+        width: 190px;
+    }
+    .col img {
+        width: 50px;
+        height: 70px;
+    }
+}

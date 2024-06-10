@@ -2,6 +2,7 @@ import React from 'react'
 import '../catslider/Catslide.css'
 import Slider from "react-slick"
 import carddata from './catdata'
+import '../../App.css'
 
 export default function Catslide() {
 

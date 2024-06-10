@@ -1,5 +1,5 @@
 .slectdrop{
-    width: 170px;
+    width: clamp(100px, 50%, 400px); 
     position: absolute;
     top: 100%;
     left: -16px;
