@@ -71,7 +71,7 @@
     transform: translateX(-50%); 
     position: absolute;
     height: 40px;
-    bottom: 570px;
+    bottom: 565px;
 }
 
 .msg input {
@@ -113,7 +113,7 @@
     }
     .mainslide .item .info p {
         font-size: 12px;
-        margin-top: 6px;
+        margin-top: 2px;
     }
     .msg{
         max-width: 170px;
