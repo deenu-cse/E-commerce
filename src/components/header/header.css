@@ -1,0 +1,131 @@
+header{
+    min-width: 100%;
+    height: 80px;
+    margin: auto;
+    background-color: #3c6060;
+    padding-bottom: 20px;
+    margin-top: -20px;
+}
+.col img{
+    width: 120px;
+    height: auto;
+}
+.hsearch{
+    width:520px;
+    height: 35px;
+     padding-top: 5px;
+     cursor: pointer;
+     display: flex;
+     gap: 15px;
+     background-color: #488d8d;
+     box-shadow: 0px 3px 6px rgba(0,0,0,20%);
+}
+.row{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+.hsearch .search input{
+    width:300px;
+    height: 30px;
+    border: 0;
+    outline: none;
+    padding-left: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,20%);
+}
+.hsearch .search{
+    position: relative;
+}
+.dropdown{
+    border: 1px solid black;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+}
+.hsearch .search img{
+    position: absolute;
+    top: 6px;
+    right: -30px;
+    width: 20px;
+}
+.hsearch{
+    border-radius: 4px;
+}
+
+.hsearch .dropdown{
+    background-color: #488d8d;
+    margin-top: -5px;
+    align-content: center;
+    padding-right: 2px;
+    padding-left: 2px;
+    border-radius: 10px;
+}
+.tabs ul li{
+    list-style: none;
+}
+.tabs{
+    z-index: 100;
+}
+.com img{
+    width: 25px;
+}
+.cart img{
+    width: 25px;
+}
+.tabs ul{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #a3ffff;
+}
+.acc{
+    position: relative;
+}
+.accdrop{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: -20px;
+    margin-top: 20px;
+    width: 150px;
+    padding: 5px;
+    box-shadow: 0px 3px 6px rgba(188, 175, 175, 1.2);
+    border-radius: 5px;
+    background-color: white;
+}
+.accdrop li{
+    padding: 3px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+    display: flex;
+}
+.accdrop li img{
+    width: 23px;
+}
+.track img{
+    height: 25px;
+}
+.accdrop li:hover{
+    background-color:#507272;
+}
+
+.acc{
+    cursor: pointer;
+}
+.accdrop li:active{
+    background-color: #488d8d;
+}
+.dropdown{
+    color: white;
+}
+
+
+

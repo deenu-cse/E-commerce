@@ -1,0 +1,54 @@
+.catslider {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.catslider h2 {
+    color: #3c6060;
+}
+
+.card {
+    width: 109px;
+    height: 170px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 60%);
+    background-color: #6a9494;
+    cursor: pointer;
+}
+
+.card img:hover {
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 90%);
+    scale: 1.05;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 9px;
+}
+
+.card img {
+    width: 109px;
+    height: 110px;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+.card p {
+    position: absolute;
+    bottom: -215px;
+    padding-left: 20px;
+    color: #304242;
+    font-weight: 500;
+    margin-top: -20px;
+    z-index: 100;
+}
+
+.card h4 {
+    z-index: 100;
+    position: absolute;
+    bottom: -246px;
+    color: #304242;
+    padding-left: 20px;
+}

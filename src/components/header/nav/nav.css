@@ -1,0 +1,177 @@
+.nav {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 6px #3c6060
+}
+
+.nav {
+    width: 98.4%;
+    height: 60px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+    padding: 0px 0px 0px 20px;
+}
+
+.allcat button {
+    padding: 10px 12px;
+    color: white;
+    background-color: #3c6060;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.allcat button:active {
+    background-color: #488d8d;
+}
+
+.allcat button img {
+    margin-bottom: -5px;
+    width: 20px;
+    padding: 0px 4px;
+}
+
+.flexme {
+    display: flex;
+    align-items: center;
+}
+
+.flexme nav ul {
+    display: flex;
+    gap: 30px;
+    margin: 0;
+}
+
+.flexme nav ul li {
+    list-style: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.inline li a {
+    color: #3c6060;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.inline li img {
+    width: 15px;
+    margin-bottom: -3px;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+}
+
+.phnum h2 {
+    color: #3c6060
+}
+
+.number {
+    margin-left: 35px;
+}
+
+.phimg img {
+    width: 40px;
+    height: 40px;
+}
+
+.pagedropdown {
+    position: absolute;
+    top: 150px;
+    height: 230px;
+    overflow-y: scroll;
+    z-index: 999;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 20%);
+    margin-left: -55px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.pagedropdown ul {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.pagedropdown ul li {
+    margin-bottom: -15px;
+}
+
+.pagedropdown ul li:hover {
+    background-color: #9db8b8
+}
+
+.pagedropdown ul li:active {
+    background-color: #c6d2d2
+}
+
+.mega {
+    height: 330px !important;
+    position: absolute;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 20%);
+    border-radius: 5px;
+    width: 96%;
+    left: 25px;
+    margin-top: 18px;
+    z-index: 100 !important;
+}
+
+.main {
+    display: flex;
+    gap: 75px;
+    padding-left: 20px;
+}
+
+.mega .main .ximg img {
+    width: 500px;
+}
+
+.first ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.second ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.third ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.first ul li {
+    margin-bottom: -25px;
+    margin-left: -40px;
+}
+
+.second ul li {
+    margin-bottom: -25px;
+    margin-left: -40px;
+}
+
+.third ul li {
+    margin-bottom: -25px;
+    margin-left: -40px;
+}
+
+.main h4 {
+    color: #283737;
+}
+.main ul li:hover{
+    cursor: pointer;
+    background-color: #9db8b8
+}
