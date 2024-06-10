@@ -73,12 +73,11 @@
 
 .msg {
     width: 80%; 
-    max-width: 300px; 
+    max-width: 250px; 
     left: 20%; 
     transform: translateX(-50%); 
-    bottom: 120px; 
-    bottom: 120px;
     position: absolute;
+    bottom: 40px; 
     height: 40px;
 }
 
@@ -100,7 +99,6 @@
     background-color: #355454;
     color: white;
     cursor: pointer;
-
     position: absolute;
     height: 40px;
     width:100px;
@@ -122,5 +120,8 @@
     }
     .mainslide .item .info p {
         font-size: 16px;
+    }
+    .msg{
+        left:30%;
     }
 }
