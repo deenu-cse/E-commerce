@@ -244,6 +244,9 @@ header {
     .row{
         gap: 2px;
     }
+    .header{
+        padding-top: 20px;
+    }
 }
 @media screen and (max-width:560px) {
     .hsearch .search input {
@@ -264,6 +267,10 @@ header {
 @media screen and (max-width:480px) {
     .dropdown {
         font-size: 9px;
+    }
+
+    .header{
+        padding-bottom: 0px;
     }
 
     .dropdown img {

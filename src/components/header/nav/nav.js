@@ -18,9 +18,9 @@ export default function Nav() {
         <div className='nav'>
             <div className='containor'>
                 <div className='flexme'>
-                    <div className='allcat'>
+                    {/* <div className='allcat'>
                         <button><img src={all}></img>Browse All Categories<img src={down}></img></button>
-                    </div>
+                    </div> */}
                     <div className='shorticon'>
                         <nav>
                             <ul className='inline'>
@@ -28,7 +28,7 @@ export default function Nav() {
                                 <li><Link>About</Link></li>
                                 <li><Link>Shop</Link></li>
                                 <li><Link>Vendors</Link></li>
-                                <li onClick={() => setmega(!mega)}><Link>Mega Menu<img src={downb}></img></Link>
+                                <li onClick={() => setmega(!mega)}><Link>Menu<img src={downb}></img></Link>
                                     {mega === true &&
                                         <div className=' mega'>
                                             <div className='main'>
