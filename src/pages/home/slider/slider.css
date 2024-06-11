@@ -62,69 +62,6 @@
 }
 
 
-.msg {
-    position: absolute;
-    bottom: 20%;
-    left: 20%;
-    transform: translateX(-50%);
-    width: 80%;
-    max-width: 250px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 70px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .msg input {
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-    border: none;
-    outline: none;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 16px;
-  }
-  
-  .msg button {
-    padding: 5px 10px;
-    border-radius: 30px;
-    border: none;
-    background-color: #355454;
-    color: white;
-    cursor: pointer;
-    height: 40px;
-    width: 100px;
-  }
-  
-  @media screen and (max-width: 776px) {
-   .msg {
-      max-width: 170px;
-      height: 30px;
-      left: 25%;
-    }
-  
-   .msg button {
-      width: 70px;
-      height: 30px;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-   .msg {
-      max-width: 120px;
-      height: 25px;
-      left: 20%;
-    }
-  
-   .msg button {
-      width: 50px;
-      height: 25px;
-    }
-  }
 @media screen and (max-width:776px) {
     .mainslide .item .info h2 {
         font-size: 40px;

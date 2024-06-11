@@ -1,0 +1,36 @@
+.homeproduct{
+    width: 98%;
+    margin: 0 auto;
+}
+
+.homecon h2{
+    color: #3c6060;
+    margin-top: 0;
+}
+
+.list li a{
+    cursor: pointer;
+    color: #2e4949;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+.list li a:hover{
+    color: #11a4a4;
+}
+.tabs{
+    display: flex;
+    justify-content: space-between;
+}
+.tabs ul{
+    margin-top: 0;
+}
+.homeproduct .xproduct{
+    display: flex;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+}
+.homeproduct .items{
+    width: 18%;
+    padding: 10px 10px;
+    border-radius: 15px;
+}

@@ -44,10 +44,6 @@ export default function HomeSlider() {
                         </div>
                     </div>
                 </Slider>
-                <div className='msg'>
-                    <input type='email' placeholder='Your email...'></input>
-                    <button>Send</button>
-                </div>
             </div>
         </div>
     )
