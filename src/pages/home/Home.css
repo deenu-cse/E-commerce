@@ -61,7 +61,7 @@
 
 .coloum {
     flex: 1;
-    max-width: 300px; 
+    max-width: 300px;
 }
 
 .topproducts {
@@ -70,7 +70,7 @@
 
 .news .box {
     background: url(../../images/bg.png);
-    width: 96%;
+    width: 95%;
     margin: 0 auto;
     height: auto;
     border-radius: 15px;
@@ -116,17 +116,19 @@
     }
 
     .list li a {
-        font-size: 12px;
+        font-size: 10px;
     }
 
 }
+
 @media screen and (max-width: 477px) {
     .homeproduct .xproduct {
-      grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
     }
-  }
-  @media screen and (max-width: 477px) {
+}
+
+@media screen and (max-width:590px) {
     .homeproduct .items {
-        max-width: calc(100% - 41px); /* Calculate maximum width for two items in a row with 20px total padding */
+        width: 90%;
     }
 }
