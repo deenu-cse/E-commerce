@@ -1,5 +1,6 @@
 .products {
     width: 100%;
+    max-width: 300px; /* Adjust max-width as needed */
     height: auto;
     background-color: white;
     overflow: hidden;
@@ -20,9 +21,9 @@
 
 .proimg img {
     width: 100%;
+    height: auto; /* Ensure image aspect ratio is maintained */
     transition: all 0.3s ease-in-out;
 }
-
 .proimg {
     position: relative;
 }
@@ -95,6 +96,7 @@
     margin-bottom: 10px;
     cursor: pointer;
     font-weight: 600;
+    font-size: 14px;
 }
 
 .add button:hover {
@@ -167,4 +169,29 @@
     align-items: center;
     margin-left: -15px;
     gap: 5px;
+}
+
+@media screen and (max-width:900px) {
+    .info h4{
+        font-size: 20px;
+        margin: 0;
+    }
+    .price{
+        gap: 10px;
+    }
+    .price .new {
+        font-size: 15px;
+    }
+    .price .old {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .products {
+        max-width: 100%; /* Adjust max-width for smaller screens */
+    }
+
+    .add button {
+        padding: 6px 12px; /* Further adjust button padding for smaller screens */
+    }
 }

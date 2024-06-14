@@ -33,48 +33,50 @@ export default function Header() {
 
     return (
         <>
-            <header>
-                <div className='containor'>
-                    <div className='row'>
-                        <div className='col'>
-                            <img src={logo} alt="Logo"></img>
-                        </div>
-                        <div className='box'>
-                            <div className='hsearch'>
-                                <div onClick={() => setdropdwon(!dropdown)} className='dropdown'>
-                                    {changename}<img src={down}></img>
-                                    {dropdown === true &&
-                                        <Droper setdropdwon={setdropdwon} handledrop={handledrop} />
-                                    }
-                                </div>
-                                <div className='search'>
-                                    <input type='text' placeholder='Search for items...'></input>
-                                    <img src={search} alt="Search"></img>
+            <div className='headerwrap'>
+                <header className='fixedZ'>
+                    <div className='containor'>
+                        <div className='row'>
+                            <div className='col'>
+                                <img src={logo} alt="Logo"></img>
+                            </div>
+                            <div className='box'>
+                                <div className='hsearch'>
+                                    <div onClick={() => setdropdwon(!dropdown)} className='dropdown'>
+                                        {changename}<img src={down}></img>
+                                        {dropdown === true &&
+                                            <Droper setdropdwon={setdropdwon} handledrop={handledrop} />
+                                        }
+                                    </div>
+                                    <div className='search'>
+                                        <input type='text' placeholder='Search for items...'></input>
+                                        <img src={search} alt="Search"></img>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className='tabs'>
-                            <ul>
-                                <li className='com'> <img src={compare}></img><span>Compare</span></li>
-                                <li className='heart'> <img src={heart}></img><span>Wishlist</span></li>
-                                <li className='cart'> <img src={cart}></img><span>Cart</span></li>
-                                <li onMouseEnter={showdrop} className='acc'> <img src={account}></img><span>Account</span>
-                                    {accdrop === true &&
-                                        <ul className='accdrop' onMouseLeave={() => setaccdrop(false)}>
-                                            <li onClick={() => setaccdrop(false)}> <img src={account}></img>MY Account</li>
-                                            <li onClick={() => setaccdrop(false)} className='track'> <img src={traking}></img>Order Traking</li>
-                                            <li onClick={() => setaccdrop(false)}> <img src={heart}></img>MY Wishlist</li>
-                                            <li onClick={() => setaccdrop(false)}> <img src={setting}></img>Setting</li>
-                                            <li onClick={() => setaccdrop(false)}> <img src={sign}></img>Sign Out</li>
-                                        </ul>
-                                    }
-                                </li>
-                            </ul>
+                            <div className='tabs'>
+                                <ul>
+                                    <li className='com'> <img src={compare}></img><span>Compare</span></li>
+                                    <li className='heart'> <img src={heart}></img><span>Wishlist</span></li>
+                                    <li className='cart'> <img src={cart}></img><span>Cart</span></li>
+                                    <li onMouseEnter={showdrop} className='acc'> <img src={account}></img><span>Account</span>
+                                        {accdrop === true &&
+                                            <ul className='accdrop' onMouseLeave={() => setaccdrop(false)}>
+                                                <li onClick={() => setaccdrop(false)}> <img src={account}></img>MY Account</li>
+                                                <li onClick={() => setaccdrop(false)} className='track'> <img src={traking}></img>Order Traking</li>
+                                                <li onClick={() => setaccdrop(false)}> <img src={heart}></img>MY Wishlist</li>
+                                                <li onClick={() => setaccdrop(false)}> <img src={setting}></img>Setting</li>
+                                                <li onClick={() => setaccdrop(false)}> <img src={sign}></img>Sign Out</li>
+                                            </ul>
+                                        }
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </header>
-            <Nav/>
+                </header>
+                <Nav />
+            </div>
         </>
     )
 }

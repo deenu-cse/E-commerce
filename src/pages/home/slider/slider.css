@@ -3,14 +3,18 @@
 
 .item img {
     width: 100%;
-    height: auto;
-    margin: 0 auto;
+    height: 100%;
     border-radius: 16px;
 }
 
+.slick-list{
+    padding: 0;
+}
 .homeslider {
     padding: 10px;
-    padding-top: 10px;
+    margin: 0 auto;
+    padding-right: 0px;
+    margin: 0 -50px;
 }
 
 .mainslide {
@@ -19,12 +23,12 @@
 
 .slick-arrow.slick-next {
     position: absolute;
-    right: 15px;
+    right: 60px;
 }
 
 .slick-arrow.slick-prev {
     position: absolute;
-    left: 15px;
+    left: 60px;
     z-index: 100;
 }
 

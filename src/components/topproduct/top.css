@@ -1,0 +1,98 @@
+.box h3 {
+    font-size: 20px;
+    position: relative;
+    padding-bottom: 15px;
+    color: #2d4747;
+}
+
+.box h3::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #ccc;
+    bottom: 0px;
+    left: 0px;
+}
+
+.box h3::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 40%;
+    background-color: #3c6060;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1000;
+}
+
+.topitems {
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+.topitems:hover{
+    transform: translateY(-10px);
+}
+
+.topimg {
+    width: 50%;
+}
+
+.topitems .topimg img {
+    cursor: pointer;
+    width: 100%;
+}
+
+.topitems.topinfo {
+    width: 60%;
+}
+
+.box h3 {
+    margin: 0;
+}
+
+.topinfo a {
+    text-decoration: none;
+}
+
+.topinfo {
+    padding-left: 5px;
+    margin-top: 8px;
+}
+
+.topinfo h4 {
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.star {
+    margin-top: -8px;
+    width: 10px;
+}
+
+.MuiRating-icon svg {
+    width: 16px;
+}
+
+.prices .news {
+    color: #375555;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.prices .olds {
+    text-decoration: line-through;
+    font-size: 12px;
+    font-weight: 600;
+    color: #2b2f2f;
+    opacity: 0.7;
+}
+
+.prices {
+    margin-top: -10px;
+}

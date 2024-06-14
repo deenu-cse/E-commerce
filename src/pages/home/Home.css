@@ -1,36 +1,89 @@
-.homeproduct{
+.homeproduct {
     width: 98%;
     margin: 0 auto;
 }
 
-.homecon h2{
+.homecon h2 {
     color: #3c6060;
     margin-top: 0;
 }
 
-.list li a{
+.list li a {
     cursor: pointer;
     color: #2e4949;
     font-weight: 500;
     transition: all 0.3s ease-in-out;
 }
-.list li a:hover{
+
+.list li a:hover {
     color: #11a4a4;
 }
-.tabs{
+
+.tabs {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 }
-.tabs ul{
+
+.slick-list {
+    padding: 0;
+}
+
+z .tabs ul {
     margin-top: 0;
 }
-.homeproduct .xproduct{
+
+.homeproduct .xproduct {
     display: flex;
-    margin: 0 -15px;
+    margin: 0 auto;
     flex-wrap: wrap;
+    width: 100%;
 }
-.homeproduct .items{
+
+.homeproduct .items {
     width: 18%;
     padding: 10px 10px;
     border-radius: 15px;
 }
+
+.lowerpro .slick-slide {
+    padding: 5px 10px;
+}
+
+.lowerpro {
+    height: 600px;
+}
+
+.doflex {
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+.topproducts {
+    width: 100%;
+}
+
+.news .box {
+    background: url(../../images/bg.png);
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: flex;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
+}
+
+.news .box .newsinfo {
+    width: 40%;
+}
+
+.news .box .newsimg {
+    width: 60%;
+}
+.news .box .newsimg img{
+    width: 100%;
+}
+
