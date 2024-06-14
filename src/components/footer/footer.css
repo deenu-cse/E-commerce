@@ -175,6 +175,7 @@ hr {
     .name h2 {
         font-size: 24px;
         margin-left: 20px;
+        font-weight: 500;
     }
 
     .folo img {

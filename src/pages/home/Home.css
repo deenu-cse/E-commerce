@@ -127,9 +127,3 @@
     }
 }
 
-@media screen and (max-width:590px) {
-    .homeproduct .items {
-        width: 85%;
-        padding: 10px 6px;
-    }
-}
