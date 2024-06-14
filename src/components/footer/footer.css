@@ -95,6 +95,7 @@ a {
 
 .lowrow2 {
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
 }
 
@@ -169,8 +170,8 @@ hr {
 
 @media screen and (max-width:520px) {
     .name h2 {
-        font-size: 23px;
-        margin-left: 70px;
+        font-size: 24px;
+        margin-left: 20px;
     }
 
     .folo img {
@@ -178,6 +179,12 @@ hr {
     }
 
     .name p {
-        font-size: 15px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:634px) {
+    .locol2 {
+        margin-left: 10px;
     }
 }

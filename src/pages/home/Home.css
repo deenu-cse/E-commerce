@@ -71,6 +71,7 @@
 .news .box {
     background: url(../../images/bg.png);
     width: 96%;
+    margin: 0 auto;
     height: auto;
     border-radius: 15px;
     display: flex;
@@ -78,6 +79,7 @@
     padding-left: 15px;
     padding-right: 15px;
     margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 .news .box .newsinfo {
@@ -114,7 +116,7 @@
     }
 
     .list li a {
-        font-size: 15px;
+        font-size: 12px;
     }
 
 }
@@ -123,3 +125,8 @@
       grid-template-columns: repeat(2, 1fr); 
     }
   }
+  @media screen and (max-width: 477px) {
+    .homeproduct .items {
+        max-width: calc(100% - 41px); /* Calculate maximum width for two items in a row with 20px total padding */
+    }
+}
