@@ -41,9 +41,9 @@ p {
 }
 
 .foorow {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     gap: 15px;
-    flex-wrap: wrap;
 }
 
 .locol img {
@@ -92,48 +92,92 @@ a {
 .locol2 ul li a:hover {
     padding-left: 3px;
 }
-.lowrow2{
+
+.lowrow2 {
     display: flex;
     flex-wrap: wrap;
 }
-.lowfoo{
+
+.lowfoo {
     width: 96%;
     margin: 0 auto;
 }
 
-.anothefoo{
+.anothefoo {
     margin-top: 50px;
 }
-.name h2{
+
+.name h2 {
     margin: 0;
     margin-left: 80px;
 }
-.foopart{
+
+.foopart {
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.folo{
+
+.folo {
     display: flex;
     align-items: center;
 }
-.folo h3{
+
+.folo h3 {
     color: #2d5252;
 }
-.folo img{
+
+.folo img {
     width: 25px;
     margin-left: 20px;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
 
-.folo img:hover{
+.folo img:hover {
     padding-bottom: 10px;
 }
 
 hr {
     border: none;
-    border-top: 1.32px solid #2d5252; 
+    border-top: 1.32px solid #2d5252;
     margin: 20px;
-  }
+}
+
+@media screen and (max-width:765px) {
+    .foorow {
+        gap: 8px;
+    }
+}
+
+@media screen and (max-width:502px) {
+    .foorow {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:650px) {
+    .folo img {
+        width: 20px;
+    }
+
+    .folo h3 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .name h2 {
+        font-size: 23px;
+        margin-left: 70px;
+    }
+
+    .folo img {
+        margin-left: 10px;
+    }
+
+    .name p {
+        font-size: 15px;
+    }
+}

@@ -27,7 +27,7 @@ export default function Nav() {
                                 <li><Link to={'/'}>Home</Link></li>
                                 <li><Link>About</Link></li>
                                 <li><Link>Shop</Link></li>
-                                <li><Link>Vendors</Link></li>
+                                <li className='no'><Link>Vendors</Link></li>
                                 <li onClick={() => setmega(!mega)}><Link>Menu<img src={downb}></img></Link>
                                     {mega === true &&
                                         <div className=' mega'>

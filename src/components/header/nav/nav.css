@@ -184,7 +184,7 @@
 
 @media screen and (max-width:565px) {
     .inline li a {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .phimg img {
@@ -195,6 +195,15 @@
         height: 22px;
     }
 
+}
+
+@media screen and (max-width:567px) {
+    .inline .no {
+        display: none;
+    }
+}
+
+@media screen and (max-width:535px) {
     .inline li img {
         width: 10px;
         margin-bottom: 7px;

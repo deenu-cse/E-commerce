@@ -27,7 +27,27 @@ export default function Home() {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
-    arrows: true
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1070,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 877,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 656,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   };
   return (
     <div>
@@ -42,9 +62,6 @@ export default function Home() {
               <ul className='list'>
                 <li>
                   <a>All</a>
-                </li>
-                <li>
-                  <a>Coffas & Teas</a>
                 </li>
                 <li>
                   <a>Peat Foods</a>
@@ -151,7 +168,7 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <Footer/>
+          <Footer />
         </div>
       </div>
     </div>

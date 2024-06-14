@@ -1,6 +1,7 @@
 .products {
     width: 100%;
-    max-width: 300px; /* Adjust max-width as needed */
+    max-width: 300px;
+    /* Adjust max-width as needed */
     height: auto;
     background-color: white;
     overflow: hidden;
@@ -21,9 +22,11 @@
 
 .proimg img {
     width: 100%;
-    height: auto; /* Ensure image aspect ratio is maintained */
+    height: auto;
+    /* Ensure image aspect ratio is maintained */
     transition: all 0.3s ease-in-out;
 }
+
 .proimg {
     position: relative;
 }
@@ -171,27 +174,11 @@
     gap: 5px;
 }
 
-@media screen and (max-width:900px) {
-    .info h4{
-        font-size: 20px;
-        margin: 0;
+@media screen and(max-width:1103px) {
+    .price .old{
+        font-size: 10px;
     }
-    .price{
-        gap: 10px;
-    }
-    .price .new {
+    .price .new{
         font-size: 15px;
-    }
-    .price .old {
-        font-size: 12px;
-    }
-}
-@media screen and (max-width: 768px) {
-    .products {
-        max-width: 100%; /* Adjust max-width for smaller screens */
-    }
-
-    .add button {
-        padding: 6px 12px; /* Further adjust button padding for smaller screens */
     }
 }

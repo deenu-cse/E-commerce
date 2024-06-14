@@ -29,19 +29,17 @@
     padding: 0;
 }
 
-z .tabs ul {
+.tabs ul {
     margin-top: 0;
 }
 
 .homeproduct .xproduct {
-    display: flex;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 0px;
 }
 
 .homeproduct .items {
-    width: 18%;
     padding: 10px 10px;
     border-radius: 15px;
 }
@@ -56,8 +54,14 @@ z .tabs ul {
 
 .doflex {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: space-evenly;
+}
+
+.coloum {
+    flex: 1;
+    max-width: 300px; 
 }
 
 .topproducts {
@@ -83,7 +87,39 @@ z .tabs ul {
 .news .box .newsimg {
     width: 60%;
 }
-.news .box .newsimg img{
+
+.news .box .newsimg img {
     width: 100%;
 }
 
+@media screen and (max-width: 466px) {
+    .homeproduct .items {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .tabs {
+        justify-content: center;
+    }
+
+    .tabs ul {
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .tabs h2 {
+        font-size: 18px;
+    }
+
+    .list li a {
+        font-size: 10px;
+    }
+
+}
+@media screen and (max-width: 477px) {
+    .homeproduct .xproduct {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }

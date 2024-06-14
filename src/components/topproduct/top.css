@@ -35,7 +35,7 @@
     margin: 10px 0px;
 }
 
-.topitems:hover{
+.topitems:hover {
     transform: translateY(-10px);
 }
 
@@ -95,4 +95,55 @@
 
 .prices {
     margin-top: -10px;
+}
+
+.topinfo {
+    flex-grow: 1;
+    /* Allow the .topinfo section to grow to fill available space */
+    padding-left: 10px;
+    /* Add left padding */
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .topinfo {
+        flex-grow: 0;
+        /* Disable flex-grow on smaller screens to prevent overflowing */
+        padding-left: 0;
+        /* Remove left padding */
+        margin-top: 0;
+        /* Remove top margin */
+    }
+
+    .topitems {
+        flex-direction: column;
+        /* Change flex direction to column on smaller screens */
+        align-items: flex-start;
+        /* Align items to start */
+    }
+
+    .topimg {
+        width: 100%;
+        /* Set image width to 100% for full width */
+        margin-bottom: 10px;
+        /* Add margin bottom to separate image from other content */
+    }
+}
+
+@media screen and (max-width:840px) {
+    .topinfo h4 {
+        font-size: 10px;
+    }
+
+    .topitems .topimg img {
+        width: 100%;
+    }
+
+    .prices .news  {
+        font-size: 12px;
+        margin-right: 5px;
+    }
+    .prices .olds {
+        font-size: 10px;
+    }
 }
