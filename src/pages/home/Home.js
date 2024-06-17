@@ -12,7 +12,6 @@ import Top from '../../components/topproduct/top'
 import bg from '../../images/newsletter.png'
 import newani from '../../components/news.json'
 import Lottie from 'lottie-react'
-import Patti from '../../components/patti.json'
 import Footer from '../../components/footer/footer'
 import name from '../../components/name.json'
 
@@ -168,7 +167,6 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <Footer />
         </div>
       </div>
     </div>

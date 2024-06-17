@@ -1,0 +1,134 @@
+.colside .sidebar {
+    display: flex;
+    width: 100%;
+    align-items: flex-start; 
+}
+
+
+
+.forflex {
+    margin-left: 10px;
+    width: 20%;
+    padding-right: 20px;
+    margin-top: 20px; 
+    position: sticky;
+    top: 170px;
+}
+
+.hoja {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 15px;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.sidecard {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 30%);
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 20px; 
+}
+
+.carditem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(0, 0, 0, 20%);
+    padding-left: 5px;
+    padding-top: 3px;
+    margin-bottom: 10px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.carditem:hover {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.carditem img {
+    width: 30px;
+}
+
+.carditem .round {
+    border-radius: 50%;
+    background-color: #5d7676;
+    padding: 3px;
+    color: white;
+    position: absolute;
+    right: 0;
+    margin-right: 5px;
+}
+
+.carditem h3 {
+    margin: 0px;
+    color: #2d4747;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.pflex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pflex span {
+    color: green;
+}
+
+.filter {
+    padding-top: 25px;
+}
+
+.filter ul li {
+    list-style: none;
+    margin-bottom: 4px;
+    width: 100%;
+    font-size: 15px;
+}
+
+.filter ul {
+    padding: 0px;
+}
+
+.filter h4 {
+    color: #2d4747;
+}
+
+.fbtn {
+    margin: 10px;
+}
+
+.fbtn button {
+    padding: 4px 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(29, 163, 29);
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.fbtn :hover {
+    transform: translateX(5px);
+    background-color: rgb(198, 198, 54);
+}
+
+.limg img {
+    width: 100%;
+    max-width: 100%; 
+    height: auto;
+    border-radius: 10px;
+    margin-top: -275px;
+}
+
+.plz {
+    width: 100%;
+    max-width: 100%; 
+}
+
