@@ -7,27 +7,28 @@ import { Link } from 'react-router-dom'
 import phone from '../../../images/icons8-phone-50 (1).png'
 import vegi from '../../../images/firstvegi.png'
 import '../../../App.css'
+import prodata from '../../../db'
 
 
 export default function Nav() {
     const [pagedropdown, setpagedropdown] = useState(false)
     const [mega, setmega] = useState(false)
+    const [prdata, setprdata] = useState([0])
+
 
 
     return (
         <div className='nav'>
             <div className='containor'>
                 <div className='flexme'>
-                    {/* <div className='allcat'>
-                        <button><img src={all}></img>Browse All Categories<img src={down}></img></button>
-                    </div> */}
                     <div className='shorticon'>
                         <nav>
                             <ul className='inline'>
                                 <li><Link to={'/'}>Home</Link></li>
                                 <li><Link>About</Link></li>
-                                <li><Link>Shop</Link></li>
-                                <li className='no'><Link>Vendors</Link></li>
+                                <li><Link>All</Link></li>
+                                <li><Link>Groceries</Link></li>
+                                <li className='no'><Link>Electronics</Link></li>
                                 <li onClick={() => setmega(!mega)}><Link>Menu<img src={downb}></img></Link>
                                     {mega === true &&
                                         <div className=' mega'>
@@ -72,7 +73,7 @@ export default function Nav() {
                                         </div>
                                     }
                                 </li>
-                                <li><Link>Blog</Link></li>
+                                <li><Link>Fashion</Link></li>
                                 <li onClick={() => setpagedropdown(!pagedropdown)}><Link>Pages <img src={downb}></img></Link>
                                     {pagedropdown === true &&
                                         <div className='pagedropdown'>
@@ -91,7 +92,6 @@ export default function Nav() {
                                         </div>
                                     }
                                 </li>
-                                <li><Link>Contact</Link></li>
                             </ul>
                         </nav>
                     </div>

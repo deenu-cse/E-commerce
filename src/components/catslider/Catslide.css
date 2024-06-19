@@ -1,13 +1,19 @@
 .products {
-    width: 100%;
-    max-width: 300px;
-    /* Adjust max-width as needed */
+    width: fit-content;
     height: auto;
     background-color: white;
     overflow: hidden;
     border-radius: 5px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
+    height: fit-content;
+    border: none;
+}
+
+.plzz {
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
 }
 
 .products:hover {
@@ -87,6 +93,8 @@
     display: flex;
     gap: 16px;
     align-items: center;
+    max-width: 85px;
+    flex-wrap: wrap;
 }
 
 .add button {
@@ -175,10 +183,27 @@
 }
 
 @media screen and(max-width:1103px) {
-    .price .old{
+    .price .old {
         font-size: 10px;
     }
-    .price .new{
+
+    .price .new {
         font-size: 15px;
+    }
+}
+
+@media screen and (max-width:470px) {
+    .plzz {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info .title a {
+        font-size: 12px;
+    }
+    .rate span a{
+        font-size: 10px;
+    }
+    .info .title{
+        margin: 2px 0;
     }
 }

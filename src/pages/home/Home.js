@@ -14,6 +14,9 @@ import newani from '../../components/news.json'
 import Lottie from 'lottie-react'
 import Footer from '../../components/footer/footer'
 import name from '../../components/name.json'
+import { Link } from 'react-router-dom';
+import Rating from '@mui/material/Rating';
+import cart from '../../images/icons8-cart-50.png'
 
 
 export default function Home() {
@@ -80,33 +83,6 @@ export default function Home() {
               <div className='items'>
                 <Catslide />
               </div>
-              <div className='items'>
-                <Catslide />
-              </div>
-              <div className='items'>
-                <Catslide />
-              </div>
-              <div className='items'>
-                <Catslide />
-              </div>
-              <div className='items'>
-                <Catslide />
-              </div>
-              <div className='items'>
-                <Catslide />
-              </div>
-              <div className='items'>
-                <Catslide />
-              </div>
-              <div className='items'>
-                <Catslide />
-              </div>
-              <div className='items'>
-                <Catslide />
-              </div>
-              <div className='items'>
-                <Catslide />
-              </div>
             </div>
           </div>
         </div>
@@ -132,12 +108,174 @@ export default function Home() {
           <div className='bflex'>
             <div className='xslide'>
               <Slider {...settings} className='lowerpro'>
-                <Catslide />
-                <Catslide />
-                <Catslide />
-                <Catslide />
-                <Catslide />
-                <Catslide />
+                <div className='products'>
+                  <div className='proimg'>
+                    <img src='https://www.jiomart.com/images/product/original/490830947/tata-sampann-high-protein-unpolished-chilka-moong-500-g-product-images-o490830947-p490830947-0-202203150526.jpg'></img>
+                    <div className='overly'>
+                    </div>
+                  </div>
+                  <div className='info'>
+                    <span className='cat'>Snack</span>
+                    <h4 className='title'><Link>This banana chips packaging pouch can be used to pack chips.</Link></h4>
+                    <div className='rate'>
+                      <Rating name="half-rating-read" defaultValue={3.5} precision={0.5} readOnly />
+                      <span className='brand'>By<Link>NestFood</Link></span>
+                    </div>
+                    <div className='last'>
+                      <div className='price'>
+                        <span className='new'>$20.85</span>
+                        <span className='old'>$28.32</span>
+                      </div>
+                      <div className='add'>
+                        <button><img src={cart}></img>Add</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='products'>
+                  <div className='proimg'>
+                    <img src='https://5.imimg.com/data5/NO/OU/DI/SELLER-69094599/banana-chips-packaging-pouch-500x500.jpg'></img>
+                    <div className='overly'>
+                    </div>
+                  </div>
+                  <div className='info'>
+                    <span className='cat'>Snack</span>
+                    <h4 className='title'><Link>This banana chips packaging pouch can be used to pack chips.</Link></h4>
+                    <div className='rate'>
+                      <Rating name="half-rating-read" defaultValue={3.5} precision={0.5} readOnly />
+                      <span className='brand'>By<Link>NestFood</Link></span>
+                    </div>
+                    <div className='last'>
+                      <div className='price'>
+                        <span className='new'>$20.85</span>
+                        <span className='old'>$28.32</span>
+                      </div>
+                      <div className='add'>
+                        <button><img src={cart}></img>Add</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='products'>
+                  <div className='proimg'>
+                    <img src='https://www.jiomart.com/images/product/original/491019524/daawat-rozana-super-basmati-rice-5-kg-product-images-o491019524-p491019524-0-202203171025.jpg'></img>
+                    <div className='overly'>
+                    </div>
+                  </div>
+                  <div className='info'>
+                    <span className='cat'>Daawat</span>
+                    <h4 className='title'><Link>Daawat Rozana Super Basmati Broken Rice 5 kg</Link></h4>
+                    <div className='rate'>
+                      <Rating name="half-rating-read" defaultValue={3.5} precision={0.5} readOnly />
+                      <span className='brand'>By<Link>Daawat</Link></span>
+                    </div>
+                    <div className='last'>
+                      <div className='price'>
+                        <span className='new'>$100</span>
+                        <span className='old'>$130</span>
+                      </div>
+                      <div className='add'>
+                        <button><img src={cart}></img>Add</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='products'>
+                  <div className='proimg'>
+                    <img src='https://www.jiomart.com/images/product/original/494267984/tecno-pop-7-pro-64-gb-2-gb-black-smartphone-digital-o494267984-p605156024-0-202309292014.jpeg'></img>
+                    <div className='overly'>
+                    </div>
+                  </div>
+                  <div className='info'>
+                    <span className='cat'>Tecno</span>
+                    <h4 className='title'><Link>Tecno Pop 7 Pro 64 GB, 2 GB, Black, Smartphone</Link></h4>
+                    <div className='rate'>
+                      <Rating name="half-rating-read" defaultValue={3.5} precision={0.5} readOnly />
+                      <span className='brand'>By<Link>Tecno</Link></span>
+                    </div>
+                    <div className='last'>
+                      <div className='price'>
+                        <span className='new'>$5,555</span>
+                        <span className='old'>$7,999</span>
+                      </div>
+                      <div className='add'>
+                        <button><img src={cart}></img>Add</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='products'>
+                  <div className='proimg'>
+                    <img src='https://www.jiomart.com/images/product/original/rvqxs1lbdt/poco-m6-pro-5g-6gb-ram-128gb-rom-power-black-smartphone-product-images-orvqxs1lbdt-p604649284-0-202309191411.jpg'></img>
+                    <div className='overly'>
+                    </div>
+                  </div>
+                  <div className='info'>
+                    <span className='cat'>POCO</span>
+                    <h4 className='title'><Link>POCO M6 Pro 5G, 6GB RAM, 128GB ROM, Power Black, Smartphone</Link></h4>
+                    <div className='rate'>
+                      <Rating name="half-rating-read" defaultValue={3.5} precision={0.5} readOnly />
+                      <span className='brand'>By<Link>POCO</Link></span>
+                    </div>
+                    <div className='last'>
+                      <div className='price'>
+                        <span className='new'>$12,199</span>
+                        <span className='old'>$16,999</span>
+                      </div>
+                      <div className='add'>
+                        <button><img src={cart}></img>Add</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='products'>
+                  <div className='proimg'>
+                    <img src='https://www.jiomart.com/images/product/original/492796557/oneplus-108-cm-43-inch-full-hd-android-smart-led-tv-with-dolby-audio-surround-sound-technology-43y1s-edge-digital-o492796557-p591054038-0-202202221339.jpeg'></img>
+                    <div className='overly'>
+                    </div>
+                  </div>
+                  <div className='info'>
+                    <span className='cat'>One Plus</span>
+                    <h4 className='title'><Link>OnePlus 108 cm (43 inch) Full HD Android Smart LED TV with Dolby Audio Surround Sound Technology, 43Y1S Edge</Link></h4>
+                    <div className='rate'>
+                      <Rating name="half-rating-read" defaultValue={3.5} precision={0.5} readOnly />
+                      <span className='brand'>By<Link>One Plus</Link></span>
+                    </div>
+                    <div className='last'>
+                      <div className='price'>
+                        <span className='new'>$22,990</span>
+                        <span className='old'>$33,999</span>
+                      </div>
+                      <div className='add'>
+                        <button><img src={cart}></img>Add</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='products'>
+                  <div className='proimg'>
+                    <img src='https://frivery.in/wp-content/uploads/2021/11/Tata-Sampann-Urad-Dal-1Kg.png'></img>
+                    <div className='overly'>
+                    </div>
+                  </div>
+                  <div className='info'>
+                    <span className='cat'>Tata Sampann</span>
+                    <h4 className='title'><Link>This banana chips packaging pouch can be used to pack chips.</Link></h4>
+                    <div className='rate'>
+                      <Rating name="half-rating-read" defaultValue={4.2} precision={0.5} readOnly />
+                      <span className='brand'>By<Link>Tata Sampann</Link></span>
+                    </div>
+                    <div className='last'>
+                      <div className='price'>
+                        <span className='new'>$699</span>
+                        <span className='old'>$989</span>
+                      </div>
+                      <div className='add'>
+                        <button><img src={cart}></img>Add</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </Slider>
             </div>
           </div>
