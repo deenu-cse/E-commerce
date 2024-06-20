@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import HomeSlider from './slider/Slider'
 import Catslide from '../../components/catslider/Catslide'
 import '../../App.css'
@@ -17,9 +17,17 @@ import name from '../../components/name.json'
 import { Link } from 'react-router-dom';
 import Rating from '@mui/material/Rating';
 import cart from '../../images/icons8-cart-50.png'
+import Nav from '../../components/header/nav/nav'
 
 
 export default function Home() {
+
+  const [selectedCategory, setSelectedCategory] = useState('all');
+
+  const handleCategorySelect = (category) => {
+    setSelectedCategory(category);
+  };
+
   var settings = {
     dots: false,
     fade: false,
@@ -53,6 +61,7 @@ export default function Home() {
   };
   return (
     <div>
+      <Nav onSelectCategory={handleCategorySelect}/>
       <HomeSlider />
       <Banner />
 
@@ -81,7 +90,7 @@ export default function Home() {
             </div>
             <div className='xproduct'>
               <div className='items'>
-                <Catslide />
+                <Catslide category={selectedCategory} />
               </div>
             </div>
           </div>

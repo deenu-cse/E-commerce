@@ -10,11 +10,15 @@ import '../../../App.css'
 import prodata from '../../../db'
 
 
-export default function Nav() {
+export default function Nav({ onSelectCategory }) {
     const [pagedropdown, setpagedropdown] = useState(false)
     const [mega, setmega] = useState(false)
     const [prdata, setprdata] = useState([0])
 
+
+    const handleCategoryClick = (category) => {
+        onSelectCategory(category);
+    };
 
 
     return (
@@ -26,9 +30,10 @@ export default function Nav() {
                             <ul className='inline'>
                                 <li><Link to={'/'}>Home</Link></li>
                                 <li><Link>About</Link></li>
-                                <li><Link>All</Link></li>
-                                <li><Link>Groceries</Link></li>
-                                <li className='no'><Link>Electronics</Link></li>
+                                <li onClick={() => handleCategoryClick('all')}><Link>All</Link></li>
+                                <li onClick={() => handleCategoryClick('groceries')}><Link>Groceries</Link></li>
+                                <li onClick={() => handleCategoryClick('Electronics')} className='no'><Link>Electronics</Link></li>
+                                <li onClick={() => handleCategoryClick('Fashion')} ><Link>Fashion</Link></li>
                                 <li onClick={() => setmega(!mega)}><Link>Menu<img src={downb}></img></Link>
                                     {mega === true &&
                                         <div className=' mega'>
@@ -73,7 +78,6 @@ export default function Nav() {
                                         </div>
                                     }
                                 </li>
-                                <li><Link>Fashion</Link></li>
                                 <li onClick={() => setpagedropdown(!pagedropdown)}><Link>Pages <img src={downb}></img></Link>
                                     {pagedropdown === true &&
                                         <div className='pagedropdown'>

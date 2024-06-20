@@ -1,7 +1,7 @@
 export default [
 
   {
-    "id": 1,
+    "idx": "Good Life Whole Moong 500 g",
     "cat_name": "groceries",
     "productName": "Good Life Whole Moong 500 g",
     "price": "20",
@@ -30,7 +30,9 @@ export default [
     "id": 1
   },
   {
+    "idx":"Moong Dal 2 kg",
     "productName": "Moong Dal 2 kg",
+    "cat_name": "groceries",
     "price": "246",
     "oldPrice": "320",
     "weight": [
@@ -56,6 +58,8 @@ export default [
   {
     "productName": "Good Life Raw Peanuts 500 g",
     "price": "89",
+    "idx":"Good Life Raw Peanuts 500 g",
+    "cat_name": "groceries",
     "oldPrice": "150",
     "weight": [
       50,
@@ -81,6 +85,8 @@ export default [
   },
   {
     "productName": "Tata Sampann Unpolished Chilka Moong 500 g",
+    "cat_name": "groceries",
+    "idx":"Tata Sampann Unpolished Chilka Moong 500 g",
     "price": "74",
     "oldPrice": "95",
     "weight": [
@@ -106,7 +112,9 @@ export default [
   },
   {
     "productName": "Good Life Moong Dal 1 kg",
+    "cat_name": "groceries",
     "price": "145",
+    "idx":"Good Life Moong Dal 1 kg",
     "oldPrice": "189",
     "weight": [
       50,
@@ -130,7 +138,9 @@ export default [
   },
   {
     "productName": "Good Life Kabuli Chana 1 kg",
+    "cat_name": "groceries",
     "price": "185",
+    "idx":"Good Life Kabuli Chana 1 kg",
     "oldPrice": "210",
     "weight": [
       50,
@@ -154,6 +164,8 @@ export default [
   },
   {
     "productName": "Angur Oily Toor Dal 5Kg",
+    "cat_name": "groceries",
+    "idx":"Angur Oily Toor Dal 5Kg",
     "price": "999",
     "oldPrice": "1100",
     "weight": [
@@ -182,6 +194,8 @@ export default [
   {
     "productName": "Fortune Soya Wadi / Chunks 1 kg",
     "price": "139",
+    "cat_name": "groceries",
+    "idx":"Fortune Soya Wadi",
     "oldPrice": "152",
     "weight": [
       50,
@@ -204,7 +218,8 @@ export default [
     "id": 8
   },
   {
-    "cat_name": "Ghee & Oils",
+    "cat_name": "groceries",
+    "idx":"Gowardhan Pure Cow Ghee 1 L (Jar)",
     "productName": "Gowardhan Pure Cow Ghee 1 L (Jar)",
     "price": "676",
     "oldPrice": "820",
@@ -231,6 +246,8 @@ export default [
   },
   {
     "productName": "Nestle EveryDay Ghee 1 L (Carton)",
+    "cat_name": "groceries",
+    "idx":"Nestle EveryDay Ghee 1 L (Carton)",
     "price": "579",
     "oldPrice": "620",
     "weight": [
@@ -257,6 +274,8 @@ export default [
   },
   {
     "productName": "Amul Cow Ghee 1 L (Pouch)",
+    "cat_name": "groceries",
+    "idx":"Amul Cow Ghee 1 L (Pouch)",
     "price": "250",
     "oldPrice": "300",
     "weight": [
@@ -281,6 +300,8 @@ export default [
   },
   {
     "productName": "Amul Cow Ghee 500 ml (Pouch)",
+    "cat_name": "groceries",
+    "idx":"Amul Cow Ghee 500 ml (Pouch)",
     "price": "300",
     "oldPrice": "380",
     "weight": [
@@ -304,6 +325,8 @@ export default [
   },
   {
     "productName": "HARYANA FRESH Rich Desi Danedar Ghee 500 Grams (Carton)",
+    "cat_name": "groceries",
+    "idx":"HARYANA FRESH Rich Desi Danedar Ghee 500 Grams ",
     "price": "249",
     "oldPrice": "280",
     "weight": [
@@ -328,6 +351,8 @@ export default [
   },
   {
     "productName": "Kheduthaat Shudh Ghee Vedic Method Traditional Suddha Ghee 1 LTR ml",
+    "cat_name": "groceries",
+    "idx":"Kheduthaat Shudh Ghee Vedic Method Traditional Suddha Ghee 1 LTR ml ",
     "price": "699",
     "oldPrice": "780",
     "weight": [
@@ -352,7 +377,8 @@ export default [
   },
   {
     "productName": "Aashirvaad Superior MP Whole Wheat Atta 1 kg",
-    "cat_name": "Atta & Flours",
+    "cat_name": "groceries",
+    "idx":"Aashirvaad Superior MP Whole Wheat Atta 1 kg",
     "price": "320",
     "oldPrice": "380",
     "weight": [
@@ -380,6 +406,8 @@ export default [
   {
     "productName": "Aashirvaad Select Sharbati Whole Wheat Atta 1 kg",
     "price": "350",
+    "idx":"Aashirvaad Select Sharbati Whole Wheat Atta 1 kg",
+    "cat_name": "groceries",
     "oldPrice": "380",
     "weight": [
       50,
@@ -405,6 +433,8 @@ export default [
   {
     "productName": "Aashirvaad Superior MP Whole Wheat Atta 2 kg",
     "price": "250",
+    "idx":"Aashirvaad Superior MP Whole Wheat Atta 2 kg",
+    "cat_name": "groceries",
     "oldPrice": "300",
     "weight": [
       50,
@@ -429,6 +459,8 @@ export default [
   },
   {
     "productName": "Chakki Atta 10 kg",
+    "cat_name": "groceries",
+    "idx":"Chakki Atta 10 kg",
     "price": "400",
     "oldPrice": "450",
     "weight": [
@@ -453,7 +485,9 @@ export default [
   {
     "productName": "Good Life MP Wheat Chakki Atta 5 kg",
     "price": "250",
+    "idx":"Good Life MP Wheat Chakki Atta 5 kg",
     "oldPrice": "280",
+    "cat_name": "groceries",
     "weight": [
       50,
       100,
@@ -478,7 +512,9 @@ export default [
   {
     "productName": "Fortune Suji / Semolina 500 g",
     "price": "26",
+    "idx":"Fortune Suji / Semolina 500 g",
     "oldPrice": "35",
+    "cat_name": "groceries",
     "weight": [
       50,
       100,
@@ -502,6 +538,8 @@ export default [
   {
     "productName": "Wheatkart Whole Wheat Atta - 10 KG",
     "price": "210",
+    "idx":"Wheatkart Whole Wheat Atta - 10 KG",
+    "cat_name": "groceries",
     "oldPrice": "250",
     "weight": [
       50,
@@ -525,7 +563,8 @@ export default [
 
   {
     "productName": "Good Life Jeera 100 g",
-    "cat_name": "masalas spices",
+    "cat_name": "groceries",
+    "idx":"Good Life Jeera 100 g",
     "price": "300",
     "oldPrice": "350",
     "weight": [
@@ -552,7 +591,9 @@ export default [
   {
     "productName": "Maggi Masala Ae Magic 6 g (Pack of 12)",
     "price": "200",
+    "idx":"Maggi Masala Ae Magic 6 g (Pack of 12)",
     "oldPrice": "250",
+    "cat_name": "groceries",
     "weight": [
       50,
       100,
@@ -578,7 +619,9 @@ export default [
   {
     "productName": "Good Life Compounded Hing Powder 50 g",
     "price": "55",
+    "idx":"Good Life Compounded Hing Powder 50 g",
     "oldPrice": "85",
+    "cat_name": "groceries",
     "weight": [
       50,
       100,
@@ -603,7 +646,9 @@ export default [
   {
     "productName": "VEEDINT CUMIN SEEDS, JEERA WHOLE, CUMIN SEED WHOLE, 1 KG PACK",
     "price": "180",
+    "idx":"VEEDINT CUMIN SEEDS, JEERA WHOLE, CUMIN SEED WHOLE, 1 KG PACK",
     "oldPrice": "220",
+    "cat_name": "groceries",
     "weight": [
       50,
       100,
@@ -627,7 +672,9 @@ export default [
   {
     "productName": "Organic Tattva Cumin Seeds 100 g",
     "price": "88",
+    "idx":"Organic Tattva Cumin Seeds 100 g",
     "oldPrice": "110",
+    "cat_name": "groceries",
     "weight": [
       50,
       100,
@@ -650,6 +697,8 @@ export default [
   {
     "productName": "Lotus Spices Green Elaichi 10 g",
     "price": "32",
+    "idx":"Lotus Spices Green Elaichi 10 g",
+    "cat_name": "groceries",
     "oldPrice": "55",
     "weight": [
       50,
@@ -672,7 +721,8 @@ export default [
   },
   {
     "productName": "Tata Sampann White Poha 500 g",
-    "cat_name": "Rice & Rice Products",
+    "cat_name": "groceries",
+    "idx":"Tata Sampann White Poha 500 g",
     "price": "140",
     "oldPrice": "180",
     "weight": [
@@ -697,6 +747,8 @@ export default [
   {
     "productName": "Daawat Rozana Super Basmati Broken Rice 1 kg",
     "price": "150",
+    "cat_name": "groceries",
+    "idx":"Daawat Rozana Super Basmati Broken Rice 1 kg",
     "oldPrice": "190",
     "weight": [
       50,
@@ -721,6 +773,8 @@ export default [
   {
     "productName": "Elina Long Grain Rice 1 kg",
     "price": "140",
+    "idx":"Elina Long Grain Rice 1 kg",
+    "cat_name": "groceries",
     "oldPrice": "160",
     "weight": [
       50,
@@ -746,6 +800,8 @@ export default [
     "productName": "Daawat Rozana Gold Basmati Broken Rice 5 kg",
     "price": "130",
     "oldPrice": "170",
+    "cat_name": "groceries",
+    "idx":"Daawat Rozana Gold Basmati Broken Rice 5 kg",
     "weight": [
       50,
       100,
@@ -769,7 +825,9 @@ export default [
   {
     "productName": "Daawat Rozana Super Basmati Broken Rice 5 kg",
     "price": "100",
+    "idx":"Daawat Rozana Super Basmati Broken Rice 5 kg",
     "oldPrice": "130",
+    "cat_name": "groceries",
     "weight": [
       50,
       100,
@@ -793,6 +851,7 @@ export default [
   {
     "productName": "OnePlus Nord CE 2 Lite 5G,128 GB,6 GB RAM,Blue Tide,Mobile Phone",
     "cat_name2": "Mobiles & Tablets",
+    "idx":"OnePlus Nord CE 2 Lite 5G,128 GB,6 GB RAM,Blue Tide,Mobile Phone",
     "cat_name": "Electronics",
     "price": "16,999.00",
     "oldPrice": "19,999.00",
@@ -822,7 +881,9 @@ export default [
   {
     "productName": "Apple iPhone 13 128 GB, Midnight (Black)",
     "price": "56,900.00",
+    "idx":"Apple iPhone 13 128 GB, Midnight (Black)",
     "oldPrice": "59,900.00",
+    "cat_name": "Electronics",
     "weight": [],
     "RAM": [
       4,
@@ -847,6 +908,8 @@ export default [
   {
     "productName": "Tecno Pop 7 Pro 64 GB, 2 GB, Black, Smartphone",
     "price": "5,555.00",
+    "idx":"Tecno Pop 7 Pro 64 GB, 2 GB, Black, Smartphone",
+    "cat_name": "Electronics",
     "oldPrice": "7,999.00 ",
     "weight": [],
     "RAM": [
@@ -872,6 +935,8 @@ export default [
   {
     "productName": "Realme C55 DLC 64GB, 4 GB RAM, Sunshower, Mobile Phone",
     "price": "10,299.00",
+    "idx":"Realme C55 DLC 64GB, 4 GB RAM, Sunshower, Mobile Phone",
+    "cat_name": "Electronics",
     "oldPrice": "12,999.00 ",
     "weight": [],
     "RAM": [
@@ -897,6 +962,8 @@ export default [
   {
     "productName": "POCO M6 Pro 5G, 6GB RAM, 128GB ROM, Power Black, Smartphone",
     "price": "12,199.00",
+    "idx":"POCO M6 Pro 5G, 6GB RAM, 128GB ROM, Power Black, Smartphone",
+    "cat_name": "Electronics",
     "oldPrice": "16,999.00",
     "weight": [],
     "RAM": [
@@ -916,33 +983,12 @@ export default [
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. ",
     "id": 39
   },
-  {
-    "productName": "Realme 80 cm (32 inch) HD Ready LED Smart Android TV 2023 Edition with Android 11 RMV2205",
-    "cat_name": "TV & Speaker",
-    "price": "9,990.00",
-    "oldPrice": "21,999.00 ",
-    "weight": [],
-    "RAM": [],
-    "SIZE": [
-      "32 inch",
-      "43 inch"
-    ],
-    "catImg": "https://www.jiomart.com/images/product/original/494249596/realme-80-cm-32-inch-hd-ready-led-smart-android-tv-2023-edition-with-android-11-rmv2205-digital-o494249596-p604838497-0-202309262030.jpeg",
-    "discount": "16",
-    "brand": "Realme",
-    "productImages": [
-      "https://www.jiomart.com/images/product/original/494249596/realme-80-cm-32-inch-hd-ready-led-smart-android-tv-2023-edition-with-android-11-rmv2205-digital-o494249596-p604838497-0-202309262030.jpeg",
-      "https://www.jiomart.com/images/product/original/494249596/realme-80-cm-32-inch-hd-ready-led-smart-android-tv-2023-edition-with-android-11-rmv2205-digital-o494249596-p604838497-1-202309262030.jpeg",
-      "https://www.jiomart.com/images/product/original/494249596/realme-80-cm-32-inch-hd-ready-led-smart-android-tv-2023-edition-with-android-11-rmv2205-digital-o494249596-p604838497-2-202309262030.jpeg",
-      "https://www.jiomart.com/images/product/original/494249596/realme-80-cm-32-inch-hd-ready-led-smart-android-tv-2023-edition-with-android-11-rmv2205-digital-o494249596-p604838497-3-202309262030.jpeg)"
-    ],
-    "rating": 4.5,
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. ",
-    "id": 40
-  },
+  
   {
     "productName": "Realme 80 cm (32 inch) HD Ready LED Smart Android TV 2023 Edition with Android 11 RMV2205",
     "price": "9,990.00",
+    "idx":"Realme 80 cm (32 inch) HD Ready LED Smart Android TV 2023 Edition with Android 11 RMV2205",
+    "cat_name": "Electronics",
     "oldPrice": "21,999.00 ",
     "weight": [],
     "RAM": [],
@@ -966,7 +1012,9 @@ export default [
   {
     "productName": "OnePlus 108 cm (43 inch) Full HD Android Smart LED TV with Dolby Audio Surround Sound Technology, 43Y1S Edge",
     "price": "22,990.00",
+    "idx":"OnePlus 108 cm (43 inch) Full HD Android Smart LED TV with Dolby Audio Surround Sound Technology, 43Y1S Edge",
     "oldPrice": "33,999.00",
+    "cat_name": "Electronics",
     "weight": [],
     "RAM": [],
     "SIZE": [
@@ -989,7 +1037,9 @@ export default [
   {
     "productName": "TCL 55 QLED Smart Google TV, 55C645",
     "price": "39,990.00",
+    "cat_name": "Electronics",
     "oldPrice": "121,990.00",
+    "idx":"TCL 55 QLED Smart Google TV, 55C645",
     "weight": [],
     "RAM": [],
     "SIZE": [
@@ -1009,6 +1059,7 @@ export default [
   {
     "productName": "Bomber Jacket with Zipper Pockets",
     "cat_name2": "Men Western Wear",
+    "idx":"Bomber Jacket with Zipper Pockets",
     "cat_name": "Fashion",
     "price": "1,593.00",
     "oldPrice": "3,125.00  ",
@@ -1037,6 +1088,8 @@ export default [
     "productName": "Mid-Rise Skinny Fit Jeans",
     "price": "269.00",
     "oldPrice": "899.00",
+    "idx":"Mid-Rise Skinny Fit Jeans",
+    "cat_name": "Fashion",
     "weight": [],
     "RAM": [],
     "SIZE": [
@@ -1062,7 +1115,9 @@ export default [
   {
     "productName": "Plutus Men Black Solid Polyester Casual Jacket M",
     "price": "499.00",
+    "idx":"Plutus Men Black Solid Polyester Casual Jacket M",
     "oldPrice": "699.00",
+    "cat_name": "Fashion",
     "weight": [],
     "RAM": [],
     "SIZE": [
@@ -1087,7 +1142,9 @@ export default [
   {
     "productName": "BULLMER Men Beige Cotton Blend Printed Single Sweatshirts",
     "price": "699.00",
+    "idx":"BULLMER Men Beige Cotton Blend Printed Single Sweatshirts",
     "oldPrice": "989.00",
+    "cat_name": "Fashion",
     "weight": [],
     "RAM": [],
     "SIZE": [
@@ -1111,6 +1168,8 @@ export default [
     "productName": "Men Checked Slim Fit Shirt",
     "price": "179.00",
     "oldPrice": "489.00",
+    "idx":"Men Checked Slim Fit Shirt",
+    "cat_name": "Fashion",
     "weight": [],
     "RAM": [],
     "SIZE": [
@@ -1134,7 +1193,8 @@ export default [
   },
   {
     "productName": "Rudraaksha Stylish Dress For women",
-    "cat_name": "Women Western Wear",
+    "cat_name": "Fashion",
+    "idx":"Rudraaksha Stylish Dress For women",
     "price": "299.00",
     "oldPrice": "389.00",
     "weight": [],
@@ -1160,6 +1220,8 @@ export default [
   {
     "productName": "Fabflee Party Flared Sleeves Printed Women Yellow Top | Women Tops | Crepe Top | Tops For Women",
     "price": "499.00",
+    "idx":"Fabflee Party Flared Sleeves Printed Women Yellow Top | Women Tops | Crepe Top | Tops For Women",
+    "cat_name": "Fashion",
     "oldPrice": "589.00",
     "weight": [],
     "RAM": [],
@@ -1185,7 +1247,9 @@ export default [
   {
     "productName": "Shrug with Shawl Lapel",
     "price": "699.00",
+    "idx":"Shrug with Shawl Lapel",
     "oldPrice": "989.00",
+    "cat_name": "Fashion",
     "weight": [],
     "RAM": [],
     "SIZE": [
@@ -1210,6 +1274,8 @@ export default [
   {
     "productName": "Tata Sampann Moong Dal 1 kg",
     "price": "160",
+    "idx":"Tata Sampann Moong Dal 1 kg",
+    "cat_name": "groceries",
     "oldPrice": "190",
     "weight": [
       50,
@@ -1229,6 +1295,8 @@ export default [
   {
     "productName": "Men's Leather Belt",
     "price": "199.00",
+    "idx":"Men's Leather Belt",
+    "cat_name": "Fashion",
     "oldPrice": "299.00",
     "weight": [],
     "RAM": [],
@@ -1252,7 +1320,9 @@ export default [
   {
     "productName": "Women's Ankle Boots",
     "price": "499.00",
+    "idx":"Women's Ankle Boots",
     "oldPrice": "699.00",
+    "cat_name": "Fashion",
     "weight": [],
     "RAM": [],
     "SIZE": [
@@ -1275,7 +1345,9 @@ export default [
   {
     "productName": "Men's Sports Shoes",
     "price": "799.00",
+    "idx":"Men's Sports Shoes",
     "oldPrice": "999.00",
+    "cat_name": "Fashion",
     "weight": [],
     "RAM": [],
     "SIZE": [
@@ -1294,7 +1366,9 @@ export default [
   {
     "productName": "Women's Floral Maxi Dress",
     "price": "399.00",
+    "idx":"Women's Floral Maxi Dress",
     "oldPrice": "599.00",
+    "cat_name": "Fashion",
     "weight": [],
     "RAM": [],
     "SIZE": [
@@ -1317,6 +1391,8 @@ export default [
   {
     "productName": "Men's Slim Fit T-Shirt",
     "price": "199.00",
+    "idx":"Men's Slim Fit T-Shirt",
+    "cat_name": "Fashion",
     "oldPrice": "299.00",
     "weight": [],
     "RAM": [],
@@ -1340,6 +1416,8 @@ export default [
   {
     "productName": "Women's High Heel Sandals",
     "price": "699.00",
+    "idx":"Women's High Heel Sandals",
+    "cat_name": "Fashion",
     "oldPrice": "999.00",
     "weight": [],
     "RAM": [],

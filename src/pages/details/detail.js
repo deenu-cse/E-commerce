@@ -21,9 +21,16 @@ import r1 from '../../images/user-1.png'
 import r2 from '../../images/user-2.png'
 import r3 from '../../images/user-4.jpg'
 import Sliderxy from "react-slick"
+import prodata from '../../db'
+import { useParams } from 'react-router-dom'
 
 
 export default function Detail() {
+
+  let { idx } = useParams()
+  let prod = prodata.filter(proda =>
+    proda.productName === idx
+  )
 
   var settings = {
     dots: false,
@@ -58,21 +65,30 @@ export default function Detail() {
   };
 
   const [inputvalue, setinputvalue] = useState(1)
-  const [rate, setrate] = useState(38)
+  const [rate, setrate] = useState(prod[0].price)
   const [active, setactive] = useState(0)
+  const [cimg, setcimg] = useState(prod[0]?.productImages[0])
+
+  const himg = (index) => {
+    setcimg(prod[0]?.productImages[index]);
+    console.log(index)
+  };
+
+  
 
   const plus = () => {
-    setinputvalue(inputvalue + 1)
-    setrate(rate + 38)
-  }
+    setinputvalue(prevInputValue => prevInputValue + 1);
+    setrate(prevRate => prevRate + parseFloat(prod[0].price));
+  };
+
   const min = () => {
     if (inputvalue !== 1) {
-      setinputvalue(inputvalue - 1)
+      setinputvalue(prevInputValue => prevInputValue - 1);
+      setrate(prevRate => prevRate - parseFloat(prod[0].price));
     }
-    if (rate !== 38) {
-      setrate(rate - 38)
-    }
-  }
+  };
+
+
 
   const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
   function valuetext(value) {
@@ -91,19 +107,31 @@ export default function Detail() {
           <div className='dcol1'>
             <div className='d2row'>
               <div className='przoom'>
-                <InnerImageZoom zoomType='hover' className='zoom' src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-16-2.jpg" />
+                <InnerImageZoom zoomType='hover' className='zoom' src={cimg} />
+                <div className='conimg'>
+                  <div className='moreimg'>
+                  {prod[0].productImages.map((image, index) => (
+                      <img
+                        key={index}
+                        onClick={() => himg(index)}
+                        src={image}
+                        alt={`Thumbnail ${index}`}
+                      />
+                    ))}
+                  </div>
+                </div>
               </div>
               <div className='prinfo'>
-                <h1>Seeds of Change Organic Quinoa, Brown</h1>
+                <h1>{prod[0].productName}</h1>
                 <div className='drate'>
-                  <Rating name="half-rating-read" defaultValue={3.5} precision={0.5} readOnly />
+                  <Rating name="half-rating-read" defaultValue={prod[0].rating} precision={0.5} readOnly />
                   <span className='rev'>(32 Reviews)</span>
                 </div>
                 <div className='rsec'>
-                  <span className='rang'>${rate}</span>
-                  <span className='brang'>$52</span>
+                  <span className='rang'>${prod[0].price}</span>
+                  <span className='brang'>${prod[0].oldPrice}</span>
                 </div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam rem officia, corrupti reiciendis minima nisi modi, quasi, odio minus dolore impedit fuga eum eligendi.</p>
+                <p>{prod[0].description}</p>
 
 
                 <div className='addmore'>
@@ -227,14 +255,9 @@ export default function Detail() {
 
       <div className='some'>
         <h3>Related products</h3>
-      <Sliderxy {...settings} className='lowerpro'>
-                <Catslide />
-                <Catslide />
-                <Catslide />
-                <Catslide />
-                <Catslide />
-                <Catslide />
-              </Sliderxy>
+        <Sliderxy {...settings} className='lowerpro'>
+
+        </Sliderxy>
       </div>
 
     </>

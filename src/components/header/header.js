@@ -75,7 +75,6 @@ export default function Header() {
                         </div>
                     </div>
                 </header>
-                <Nav />
             </div>
         </>
     )
