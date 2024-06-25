@@ -23,6 +23,7 @@ import r3 from '../../images/user-4.jpg'
 import Sliderxy from "react-slick"
 import prodata from '../../db'
 import { useParams } from 'react-router-dom'
+import revdata from '../../reviewdata'
 
 
 export default function Detail() {
@@ -74,7 +75,7 @@ export default function Detail() {
     console.log(index)
   };
 
-  
+
 
   const plus = () => {
     setinputvalue(prevInputValue => prevInputValue + 1);
@@ -110,7 +111,7 @@ export default function Detail() {
                 <InnerImageZoom zoomType='hover' className='zoom' src={cimg} />
                 <div className='conimg'>
                   <div className='moreimg'>
-                  {prod[0].productImages.map((image, index) => (
+                    {prod[0].productImages.map((image, index) => (
                       <img
                         key={index}
                         onClick={() => himg(index)}
@@ -229,7 +230,20 @@ export default function Detail() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, suscipit exercitationem accusantium obcaecati quos voluptate nesciunt facilis itaque modi commodi dignissimos sequi repudiandae minus ab deleniti totam officia id incidunt?</p>
                   </div>
                 </div>
-
+                {revdata.map((v, i) =>
+                  <div className='flexkr'>
+                    <div className='rimg'>
+                      <img src={r3} />
+                    </div>
+                    <div className='dinfo'>
+                      <div className='xflex'>
+                        <h5>{v.date}</h5>
+                        <Rating name="half-rating-read" defaultValue={v.rating} precision={0.5} readOnly />
+                      </div>
+                      <p>{v.review}</p>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>

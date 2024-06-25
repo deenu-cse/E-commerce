@@ -18,10 +18,13 @@ import { Link } from 'react-router-dom';
 import Rating from '@mui/material/Rating';
 import cart from '../../images/icons8-cart-50.png'
 import Nav from '../../components/header/nav/nav'
+import Header from '../../components/header/header'
 
 
 export default function Home() {
 
+
+  const [searched, setsearched] = React.useState('')
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   const handleCategorySelect = (category) => {
@@ -61,10 +64,10 @@ export default function Home() {
   };
   return (
     <div>
-      <Nav onSelectCategory={handleCategorySelect}/>
+      <Header />
+      <Nav onSelectCategory={handleCategorySelect} />
       <HomeSlider />
       <Banner />
-
       <section>
         <div className='homeproduct'>
           <div className='homecon'>

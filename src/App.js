@@ -8,18 +8,19 @@ import Listing from './pages/listing/listing';
 import Footer from './components/footer/footer';
 import Notfound from './pages/notfound/notfound';
 import Detail from './pages/details/detail';
+import Render from './pages/render';
 
 function App() {
   return (
     <BrowserRouter>
-      <Header />
       <Routes>
         <Route exact={true} path="/" element={<Home />} />
         <Route path="/listing" element={<Listing />} />
         <Route path="/*" element={<Notfound />} />
         <Route path="/product/details/:idx" element={<Detail />} />
+        <Route path='/your-search/:query' element={<Render />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </BrowserRouter>
 
   );

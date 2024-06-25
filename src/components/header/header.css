@@ -251,8 +251,13 @@ header {
 }
 
 @media screen and (max-width:560px) {
+
+    .tabs ul .com{
+        display: none;
+    }
+
     .hsearch {
-        width: 220px;
+        width: 240px;
     }
 
     .row {
@@ -262,7 +267,7 @@ header {
 
 @media screen and (max-width:560px) {
     .hsearch .search input {
-        width: 90px;
+        width: 120px;
         margin: 0;
         font-size: 12px;
     }
@@ -270,7 +275,7 @@ header {
 
 @media screen and (max-width:560px) {
     .dropdown {
-        font-size: 9px;
+        font-size: 10px;
     }
 
     .dropdown img {
