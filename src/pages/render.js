@@ -16,7 +16,6 @@ export default function Render() {
             <Header />
             <h1>Your search result for "{query}"</h1>
             <br /><br />
-
             <div className='plzz'>
                 {filterData.map((item, index) => (
                     <Link key={index} to={`/your-search/${item.idx}`}>

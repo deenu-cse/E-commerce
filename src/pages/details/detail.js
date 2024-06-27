@@ -22,11 +22,22 @@ import r2 from '../../images/user-2.png'
 import r3 from '../../images/user-4.jpg'
 import Sliderxy from "react-slick"
 import prodata from '../../db'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import revdata from '../../reviewdata'
+import { Link } from 'react-router-dom';
+import cart from '../../images/icons8-cart-50.png'
+
+
 
 
 export default function Detail() {
+
+  const navigate = useNavigate()
+
+  const showcart=(value)=>{
+    navigate(`/your-cart/${value}`)
+    console.log(value)
+  }
 
   let { idx } = useParams()
   let prod = prodata.filter(proda =>
@@ -70,6 +81,21 @@ export default function Detail() {
   const [active, setactive] = useState(0)
   const [cimg, setcimg] = useState(prod[0]?.productImages[0])
 
+
+  const changeinput = (name, value) => {
+    setrev(() => ({
+      ...rev,
+      [name]: value
+    }))
+  }
+
+
+  const [rev, setrev] = useState({
+    review: "",
+    username: "",
+    rating: "1.5"
+  })
+
   const himg = (index) => {
     setcimg(prod[0]?.productImages[index]);
     console.log(index)
@@ -101,6 +127,29 @@ export default function Detail() {
   const handleChange = (even, newValue) => {
     setValue(newValue);
   };
+
+  const sumbitrev = (e) => {
+    e.preventDefault()
+    console.log(rev)
+
+    const newReview = {
+      review: rev.review,
+      userName: rev.username,
+      rating: rev.rating,
+      productId: prod[0].productId, 
+      date: new Date().toLocaleString(),
+      id: revdata.length + 1 
+    };
+
+    revdata.push(newReview);
+    setrev({
+      review: "",
+      username: "",
+      rating: "1.5"
+    });
+
+  }
+
   return (
     <>
       <div className='dright'>
@@ -142,7 +191,7 @@ export default function Detail() {
                     <span className='min' onClick={min}><img src={down} /></span>
                   </div>
                   <div className='addbtn'>
-                    <button>Add to cart</button>
+                    <button onClick={(e)=>showcart(prod[0].idx)}>Add to cart</button>
                   </div>
                 </div>
 
@@ -250,17 +299,17 @@ export default function Detail() {
         }
 
         <br />
-        <form>
+        <form onSubmit={sumbitrev}>
           <h4>Add a review</h4>
           <div className='foclass'>
-            <textarea placeholder='Write here...'></textarea>
+            <textarea onChange={(e) => changeinput(e.target.name, e.target.value)} placeholder='Write here...' name='review'></textarea>
           </div>
           <div className='inflex'>
             <div className='fcol1'>
-              <input type='text' placeholder='Name...'></input>
+              <input type='text' onChange={(e) => changeinput(e.target.name, e.target.value)} placeholder='Name...' name='username'></input>
             </div>
             <div className='fcol2'>
-              <input placeholder='Email...' type='email'></input>
+              <Rating name="rating" onChange={(e) => changeinput(e.target.name, e.target.value)} precision={0.5} />
             </div>
           </div>
           <button>Sumbit</button>
@@ -270,7 +319,174 @@ export default function Detail() {
       <div className='some'>
         <h3>Related products</h3>
         <Sliderxy {...settings} className='lowerpro'>
-
+          <div className='products'>
+            <div className='proimg'>
+              <img src='https://www.jiomart.com/images/product/original/490830947/tata-sampann-high-protein-unpolished-chilka-moong-500-g-product-images-o490830947-p490830947-0-202203150526.jpg'></img>
+              <div className='overly'>
+              </div>
+            </div>
+            <div className='info'>
+              <span className='cat'>Snack</span>
+              <h4 className='title'><Link>This banana chips packaging pouch can be used to pack chips.</Link></h4>
+              <div className='rate'>
+                <Rating name="half-rating-read" defaultValue={3.5} precision={0.5} readOnly />
+                <span className='brand'>By<Link>NestFood</Link></span>
+              </div>
+              <div className='last'>
+                <div className='price'>
+                  <span className='new'>$20.85</span>
+                  <span className='old'>$28.32</span>
+                </div>
+                <div className='add'>
+                  <button><img src={cart}></img>Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='products'>
+            <div className='proimg'>
+              <img src='https://5.imimg.com/data5/NO/OU/DI/SELLER-69094599/banana-chips-packaging-pouch-500x500.jpg'></img>
+              <div className='overly'>
+              </div>
+            </div>
+            <div className='info'>
+              <span className='cat'>Snack</span>
+              <h4 className='title'><Link>This banana chips packaging pouch can be used to pack chips.</Link></h4>
+              <div className='rate'>
+                <Rating name="half-rating-read" defaultValue={3.5} precision={0.5} readOnly />
+                <span className='brand'>By<Link>NestFood</Link></span>
+              </div>
+              <div className='last'>
+                <div className='price'>
+                  <span className='new'>$20.85</span>
+                  <span className='old'>$28.32</span>
+                </div>
+                <div className='add'>
+                  <button><img src={cart}></img>Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='products'>
+            <div className='proimg'>
+              <img src='https://www.jiomart.com/images/product/original/491019524/daawat-rozana-super-basmati-rice-5-kg-product-images-o491019524-p491019524-0-202203171025.jpg'></img>
+              <div className='overly'>
+              </div>
+            </div>
+            <div className='info'>
+              <span className='cat'>Daawat</span>
+              <h4 className='title'><Link>Daawat Rozana Super Basmati Broken Rice 5 kg</Link></h4>
+              <div className='rate'>
+                <Rating name="half-rating-read" defaultValue={3.5} precision={0.5} readOnly />
+                <span className='brand'>By<Link>Daawat</Link></span>
+              </div>
+              <div className='last'>
+                <div className='price'>
+                  <span className='new'>$100</span>
+                  <span className='old'>$130</span>
+                </div>
+                <div className='add'>
+                  <button><img src={cart}></img>Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='products'>
+            <div className='proimg'>
+              <img src='https://www.jiomart.com/images/product/original/494267984/tecno-pop-7-pro-64-gb-2-gb-black-smartphone-digital-o494267984-p605156024-0-202309292014.jpeg'></img>
+              <div className='overly'>
+              </div>
+            </div>
+            <div className='info'>
+              <span className='cat'>Tecno</span>
+              <h4 className='title'><Link>Tecno Pop 7 Pro 64 GB, 2 GB, Black, Smartphone</Link></h4>
+              <div className='rate'>
+                <Rating name="half-rating-read" defaultValue={3.5} precision={0.5} readOnly />
+                <span className='brand'>By<Link>Tecno</Link></span>
+              </div>
+              <div className='last'>
+                <div className='price'>
+                  <span className='new'>$5,555</span>
+                  <span className='old'>$7,999</span>
+                </div>
+                <div className='add'>
+                  <button><img src={cart}></img>Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='products'>
+            <div className='proimg'>
+              <img src='https://www.jiomart.com/images/product/original/rvqxs1lbdt/poco-m6-pro-5g-6gb-ram-128gb-rom-power-black-smartphone-product-images-orvqxs1lbdt-p604649284-0-202309191411.jpg'></img>
+              <div className='overly'>
+              </div>
+            </div>
+            <div className='info'>
+              <span className='cat'>POCO</span>
+              <h4 className='title'><Link>POCO M6 Pro 5G, 6GB RAM, 128GB ROM, Power Black, Smartphone</Link></h4>
+              <div className='rate'>
+                <Rating name="half-rating-read" defaultValue={3.5} precision={0.5} readOnly />
+                <span className='brand'>By<Link>POCO</Link></span>
+              </div>
+              <div className='last'>
+                <div className='price'>
+                  <span className='new'>$12,199</span>
+                  <span className='old'>$16,999</span>
+                </div>
+                <div className='add'>
+                  <button><img src={cart}></img>Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='products'>
+            <div className='proimg'>
+              <img src='https://www.jiomart.com/images/product/original/492796557/oneplus-108-cm-43-inch-full-hd-android-smart-led-tv-with-dolby-audio-surround-sound-technology-43y1s-edge-digital-o492796557-p591054038-0-202202221339.jpeg'></img>
+              <div className='overly'>
+              </div>
+            </div>
+            <div className='info'>
+              <span className='cat'>One Plus</span>
+              <h4 className='title'><Link>OnePlus 108 cm (43 inch) Full HD Android Smart LED TV with Dolby Audio Surround Sound Technology, 43Y1S Edge</Link></h4>
+              <div className='rate'>
+                <Rating name="half-rating-read" defaultValue={3.5} precision={0.5} readOnly />
+                <span className='brand'>By<Link>One Plus</Link></span>
+              </div>
+              <div className='last'>
+                <div className='price'>
+                  <span className='new'>$22,990</span>
+                  <span className='old'>$33,999</span>
+                </div>
+                <div className='add'>
+                  <button><img src={cart}></img>Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='products'>
+            <div className='proimg'>
+              <img src='https://frivery.in/wp-content/uploads/2021/11/Tata-Sampann-Urad-Dal-1Kg.png'></img>
+              <div className='overly'>
+              </div>
+            </div>
+            <div className='info'>
+              <span className='cat'>Tata Sampann</span>
+              <h4 className='title'><Link>This banana chips packaging pouch can be used to pack chips.</Link></h4>
+              <div className='rate'>
+                <Rating name="half-rating-read" defaultValue={4.2} precision={0.5} readOnly />
+                <span className='brand'>By<Link>Tata Sampann</Link></span>
+              </div>
+              <div className='last'>
+                <div className='price'>
+                  <span className='new'>$699</span>
+                  <span className='old'>$989</span>
+                </div>
+                <div className='add'>
+                  <button><img src={cart}></img>Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </Sliderxy>
       </div>
 

@@ -9,6 +9,7 @@ import Footer from './components/footer/footer';
 import Notfound from './pages/notfound/notfound';
 import Detail from './pages/details/detail';
 import Render from './pages/render';
+import Cart from './components/cart/Cart';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/*" element={<Notfound />} />
         <Route path="/product/details/:idx" element={<Detail />} />
         <Route path='/your-search/:query' element={<Render />} />
+        <Route path='/your-cart/:value' element={<Cart />} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -33,7 +33,7 @@ export default function Header() {
     const handleSearch = () => {
         navigate(`/your-search/${query}`);
     };
-    
+
     const handleKeyPress = (e) => {
         if (e.key == 'Enter') {
             handleSearch()

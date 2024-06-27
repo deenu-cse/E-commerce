@@ -288,6 +288,9 @@ header {
 }
 
 @media screen and (max-width:480px) {
+    .header{
+        margin-top: 0px;
+    }
     .dropdown {
         font-size: 9px;
     }
@@ -301,7 +304,7 @@ header {
     }
 
     .hsearch .search input {
-        width: 70px;
+        width: 80px;
         margin: 0;
         font-size: 12px;
     }
