@@ -12,9 +12,17 @@ export default function Cart() {
 
     const { value } = useParams()
     const [invalue, setinvalue] = useState(1)
+    const [trash, settrash] = useState(true)
+
+    const hndltrash = () => {
+        settrash(!trash)
+        setinvalue(0)
+    }
 
     const hndlin = (e) => {
-        setinvalue(e)
+        if (e >= 1) {
+            setinvalue(e)
+        }
     }
 
     const filtercart = cartdata.filter((item) => (
@@ -29,23 +37,24 @@ export default function Cart() {
             {filtercart.map((v, i) => (
                 <div key={i} className='cartflex'>
                     <div className='cartsec'>
-                        <div className='cartleft'>
-                            <div className='cartimg'>
-                                <input type='checkbox'></input>
-                                <img src={v.catImg} />
+                        {trash ? (
+                            <div className='cartleft'>
+                                <div className='cartimg'>
+                                    <input type='checkbox'></input>
+                                    <img src={v.catImg} />
+                                </div>
+                                <div>
+                                    <h3>{v.productName}</h3>
+                                    <Rating name="half-rating-read" defaultValue={v.rating} precision={0.5} readOnly />
+                                </div>
+                                <div className='cartright'>
+                                    <span>${v.price * invalue}</span>
+                                    <input type='number' value={invalue} onChange={(e) => hndlin(e.target.value)}>
+                                    </input>
+                                    <img src='https://img.icons8.com/?size=100&id=4B0kCMNiLlmW&format=png&color=000000' onClick={hndltrash} />
+                                </div>
                             </div>
-                            <div>
-                                <h3>{v.productName}</h3>
-                                <Rating name="half-rating-read" defaultValue={v.rating} precision={0.5} readOnly />
-                            </div>
-                            <div className='cartright'>
-                                <span>${v.price * invalue}</span>
-                                <input type='number' value={invalue} onChange={(e) => hndlin(e.target.value)}>
-                                </input>
-                                <img src='https://img.icons8.com/?size=100&id=4B0kCMNiLlmW&format=png&color=000000' />
-                            </div>
-
-                        </div>
+                        ) : <h3> Explore Exceptional Products Now!</h3>}
                     </div>
                     <div className='cartcal'>
                         <div className='amount'>

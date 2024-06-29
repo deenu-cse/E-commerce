@@ -10,6 +10,8 @@ import Notfound from './pages/notfound/notfound';
 import Detail from './pages/details/detail';
 import Render from './pages/render';
 import Cart from './components/cart/Cart';
+import SignIn from './pages/SignIn';
+import SignUp from './pages/SignUp';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route exact={true} path="/" element={<Home />} />
         <Route path="/listing" element={<Listing />} />
         <Route path="/*" element={<Notfound />} />
+        <Route path="/SignIn" element={<SignIn/>} />
+        <Route path='/Signup' element={<SignUp/>}/>
         <Route path="/product/details/:idx" element={<Detail />} />
         <Route path='/your-search/:query' element={<Render />} />
         <Route path='/your-cart/:value' element={<Cart />} />

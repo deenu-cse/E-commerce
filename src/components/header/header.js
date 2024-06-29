@@ -11,7 +11,7 @@ import tracking from '../../images/icons8-tracking-48.png';
 import setting from '../../images/icons8-settings-50.png';
 import signOut from '../../images/icons8-sign-out-32.png';
 import downArrow from '../../images/icons8-expand-arrow-24 (1).png';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Header() {
     const [dropdown, setDropdown] = useState(false);
@@ -73,8 +73,10 @@ export default function Header() {
                                 <li className='heart'> <img src={heart} alt="Wishlist" /><span>Wishlist</span></li>
                                 <li className='cart'> <img src={cart} alt="Cart" /><span>Cart</span></li>
                                 <li onMouseEnter={showAccountDropdown} className='acc'>
-                                    <img src={account} alt="Account" /><span>Account</span>
-                                    {accdrop &&
+                                    <Link to={'/signIn'}>
+                                        <img src={account} alt="Account" /><span><button>SignIn</button></span>
+                                    </Link>
+                                    {/* {accdrop &&
                                         <ul className='accdrop' onMouseLeave={() => setAccdrop(false)}>
                                             <li> <img src={account} alt="My Account" />My Account</li>
                                             <li className='track'>
@@ -84,7 +86,7 @@ export default function Header() {
                                             <li> <img src={setting} alt="Settings" />Settings</li>
                                             <li> <img src={signOut} alt="Sign Out" />Sign Out</li>
                                         </ul>
-                                    }
+                                    } */}
                                 </li>
                             </ul>
                         </div>

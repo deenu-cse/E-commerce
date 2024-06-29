@@ -120,6 +120,11 @@ header {
     color: #a3ffff;
 }
 
+/* .tabs ul li{
+    display: flex;
+    gap: 5px;
+} */
+
 .acc {
     position: relative;
 }
@@ -151,6 +156,16 @@ header {
 
 .track img {
     height: 25px;
+}
+
+.tabs ul li span button {
+    background-color: #a3ffff;
+    border-radius: 8px;
+    color: rgb(79, 78, 78);
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 .accdrop li:hover {
@@ -252,7 +267,7 @@ header {
 
 @media screen and (max-width:560px) {
 
-    .tabs ul .com{
+    .tabs ul .com {
         display: none;
     }
 
@@ -288,9 +303,10 @@ header {
 }
 
 @media screen and (max-width:480px) {
-    .header{
+    .header {
         margin-top: 0px;
     }
+
     .dropdown {
         font-size: 9px;
     }
