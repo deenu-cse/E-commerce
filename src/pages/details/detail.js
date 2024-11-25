@@ -28,8 +28,6 @@ import { Link } from 'react-router-dom';
 import cart from '../../images/icons8-cart-50.png'
 
 
-
-
 export default function Detail() {
 
   const navigate = useNavigate()
