@@ -31,7 +31,7 @@ export default function SignIn() {
         setshowloader(true);
 
         try {
-            const response = await fetch('http://localhost:4000/signin', {
+            const response = await fetch('https://storx-backend.vercel.app/signin', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -44,8 +44,8 @@ export default function SignIn() {
 
             if (response.ok) {
                 console.log("Sign-in successful:", data);
-                localStorage.setItem('token', data.token); 
-                navigate('/dashboard'); 
+                localStorage.setItem('token', data.token);
+                navigate('/dashboard');
             } else {
                 console.error("Sign-in failed:", data.message);
                 alert(data.message || 'Failed to sign in');

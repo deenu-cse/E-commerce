@@ -58,7 +58,7 @@ export default function SignUp() {
         }
 
         try {
-            const response = await fetch('http://localhost:4000/signup', {
+            const response = await fetch('https://storx-backend.vercel.app/signup', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
