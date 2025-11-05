@@ -12,6 +12,7 @@ import Render from './pages/render';
 import Cart from './components/cart/Cart';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
+import Sasi from './pages/sasi/sasi';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/product/details/:idx" element={<Detail />} />
         <Route path='/your-search/:query' element={<Render />} />
         <Route path='/your-cart/:value' element={<Cart />} />
+        <Route path='/sasi' element={<Sasi/>} />
       </Routes>
       <Footer />
     </BrowserRouter>
